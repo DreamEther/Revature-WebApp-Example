@@ -129,4 +129,6 @@ C:\Repos\Revature Projects\RevatureWebApp\WebApplication1\WebApplication1\obj\De
 C:\Repos\Revature Projects\RevatureWebApp\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Views\Customer\GetOne.cshtml.g.cs
 C:\Repos\Revature Projects\RevatureWebApp\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Views\Customer\GetTwo.cshtml.g.cs
 C:\Repos\Revature Projects\RevatureWebApp\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Views\Customer\GetCustomer.cshtml.g.cs
-C:\Repos\Revature Projects\RevatureWebApp\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Views\Customer\GetAllCustomers.cshtml.g.cs
+C:\Repos\Revature Projects\RevatureWebApp\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Views\Employee\Details.cshtml.g.cs
+C:\Repos\Revature Projects\RevatureWebApp\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Views\Customer\GetAllCustomersAutoGenerate.cshtml.g.cs
+C:\Repos\Revature Projects\RevatureWebApp\WebApplication1\WebApplication1\obj\Debug\netcoreapp3.0\Razor\Views\Customer\Details.cshtml.g.cs

@@ -9,6 +9,29 @@ namespace WebApplication1.Controllers
 {
     public class CustomerController : Controller
     {
+        public List<Customer> customers = new List<Customer>()
+            {
+                new Customer()
+                {
+                    Id = 1040,
+                    Age = 77
+                },
+                 new Customer()
+                {
+                    Id = 1042,
+                    Age = 55
+                },
+                  new Customer()
+                {
+                    Id = 1041,
+                    Age = 36
+                },
+                   new Customer()
+                {
+                    Id = 740,
+                    Age = 20
+                }
+            };
         public IActionResult Index() // if we need to call index...url will be localhost.44332/Customer/Index
         {
             return View();
@@ -48,7 +71,7 @@ namespace WebApplication1.Controllers
         // passing a collection
         // can create a view with the Template List and type in the Model class to which it will be bound
         //this will generate the view for us so we don't have to write any code 
-        public IActionResult GetAllCustomers()
+        public IActionResult GetAllCustomersAutoGenerate() // needs to have the exact same name as the view
         {
             List<Customer> customers = new List<Customer>()
             {
@@ -74,6 +97,14 @@ namespace WebApplication1.Controllers
                 },
         };
             return View(customers);
+        }
+        public ActionResult Details(int id)
+        {
+            var cust = customers.Where(e => e.Id == id).Single<Customer>();
+            // search employee list here and return a single employee based on the id entered
+            return View(cust); // would need to pass a single instance of employee by searching an employee list
+            //which we would need to create at the top of this class, adding employee instances and hard coding properties
+            //eventually we won't be hard coding 
         }
     }
 }
