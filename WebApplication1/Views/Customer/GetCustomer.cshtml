@@ -1,0 +1,14 @@
+﻿  <!-- binding the view to the object of type customer-->
+<!-- bind the view using lowercase model -->
+@model WebApplication1.Models.Customer
+
+@{
+    ViewData["Title"] = "GetCustomer";
+}
+
+<h1>GetCustomer</h1>
+
+<!-- must use uppercase Model once the view is bound to Customer to pass in the Property-->
+<label>Customer ID:</label> @Model.Id
+<br/>
+<label>Customer Age:</label> @Model.Age

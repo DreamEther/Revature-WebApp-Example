@@ -1,0 +1,14 @@
+﻿<!-- bind the view to IEnumerable so we can pass a list of customers, not just a single instance-->
+@model IEnumerable<WebApplication1.Models.Customer>
+@{
+    ViewData["Title"] = "GetAllCustomers";
+}
+
+<h1>GetAllCustomers</h1>
+
+@foreach(var item in Model)
+{
+<div>Customer ID: @item.Id
+    Age: @item.Age     
+</div>
+}

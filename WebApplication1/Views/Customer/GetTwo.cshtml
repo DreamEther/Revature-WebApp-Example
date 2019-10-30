@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "GetTwo";
+}
+
+<h1>GetTwo</h1>
+
+<div>
+    <p> This will appear when we call GetTwo</p>
+</div>
+
+@*known as Razor Syntax when we use the @ symbol*@
+<h2> @ViewBag.Message</h2>
+<h3>@ViewData["Message"]</h3>
+<p> The customer id you passed is @ViewBag.CustomerId</p>
+<p> The customer id you passed is @ViewData["CustomerId"]</p>
+
+<!-- need to use "at" above symbol to call server side method -->
